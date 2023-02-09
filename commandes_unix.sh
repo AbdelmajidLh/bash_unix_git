@@ -3,15 +3,41 @@
 #====================================================================
 # Auteur @Abdelmajid EL HOU - Data analyst & scientist - PhD
 
+
+# pwd (Print Working Directory): Cette commande affiche le chemin du répertoire actuel.
+pwd
+
+# cd (Change Directory): Cette commande permet de changer de répertoire.
+cd /home/dossier
+
+# ls (List): Cette commande permet de lister les fichiers et les répertoires dans le répertoire actuel.
+ls
+
+# Afficher les fichiers/dossiers cachés
+ls -a
+
+# mkdir (Make Directory): Cette commande permet de créer un nouveau répertoire.
+mkdir new_folder/
+
+# cp (Copy): Cette commande permet de copier un fichier ou un répertoire d'un emplacement à un autre.
+cp file.txt file_copy.txt
+
+# mv (Move): Cette commande permet de déplacer un fichier ou un répertoire d'un emplacement à un autre.
+mv file.txt /home/dossier
+
+# rm (Remove): Cette commande permet de supprimer un fichier ou un répertoire.
+rm file.txt
+
+# cat (Concatenate): Cette commande permet d'afficher le contenu d'un fichier
+cat file.txt
+
+
 #===========================
 # CHERCHER LES FICHIERS
 #===========================
 # Afficher les fichiers contenant le terme x
 grep -rnw '/path/to/somewhere/' -e 'pattern'
 find . -name thisfile.txt
-
-# Afficher les fichiers/dossiers cachés
-ls -a
 
 #===========================
 # TRANSFORMATION DE FICHIERS
