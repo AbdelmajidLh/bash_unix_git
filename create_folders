@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Directory names
+directories=("tables" "figures" "phyobjects" "codes_notes")
+
+# Loop through the directory names
+for dir_name in "${directories[@]}"; do
+  if [ -d "$dir_name" ]; then
+    echo "The directory $dir_name already exists."
+  else
+    echo "Creating the directory $dir_name."
+    mkdir "$dir_name"
+  fi
+done
