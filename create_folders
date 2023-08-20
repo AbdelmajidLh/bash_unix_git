@@ -1,14 +1,33 @@
 #!/bin/bash
 
-# Directory names
-directories=("tables" "figures" "phyobjects" "codes_notes")
+# Check and create directories
+if [ ! -d "raw_data" ]; then
+    mkdir "raw_data"
+    echo "Created directory: raw_data"
+fi
 
-# Loop through the directory names
-for dir_name in "${directories[@]}"; do
-  if [ -d "$dir_name" ]; then
-    echo "The directory $dir_name already exists."
-  else
-    echo "Creating the directory $dir_name."
-    mkdir "$dir_name"
-  fi
-done
+if [ ! -d "data" ]; then
+    mkdir "data"
+    echo "Created directory: data"
+fi
+
+if [ ! -d "tables" ]; then
+    mkdir "tables"
+    echo "Created directory: tables"
+fi
+
+if [ ! -d "figures" ]; then
+    mkdir "figures"
+    echo "Created directory: figures"
+fi
+
+if [ ! -d "phyobjects" ]; then
+    mkdir "phyobjects"
+    echo "Created directory: phyobjects"
+fi
+
+if [ ! -d "codes_notes" ]; then
+    mkdir "codes_notes"
+    echo "Created directory: codes_notes"
+fi
+
