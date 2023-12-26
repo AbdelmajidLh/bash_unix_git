@@ -1,2 +1,3 @@
 #pattern  filter=crypt diff=crypt merge=crypt
 sensitive_file  filter=crypt diff=crypt merge=crypt
+encrypted_files.txt  filter=crypt diff=crypt merge=crypt
